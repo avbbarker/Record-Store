@@ -27,7 +27,11 @@ export default function Nav() {
           }
         >
           <br />
+<<<<<<< HEAD
           Your Playlist
+=======
+          Playlist
+>>>>>>> 138816fefb41982f1de477185398e0f901ed210a
         </NavLink>
       </div>
     </nav>

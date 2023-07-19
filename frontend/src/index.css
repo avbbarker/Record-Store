@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.playlist-form {
+  text-align: float;
+}
+
+.playlist-form input, .playlist-form label {
+  display: block;
+  margin-top: 0.5em;
+}
