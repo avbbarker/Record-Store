@@ -13,12 +13,12 @@ export default function Nav() {
       </NavLink>
       <div className="flex gap-5 items-center">
         <NavLink
-          to="shop"
+          to="albums"
           className={({ isActive }) =>
             `px-1.5 hover:underline ${isActive && "font-semibold"}`
           }
         >
-          Our albums
+          Our Albums
         </NavLink>
         <NavLink
           to="playlist"
@@ -26,7 +26,8 @@ export default function Nav() {
             `px-1.5 hover:underline ${isActive && "font-semibold"}`
           }
         >
-          Playlist
+          <br />
+          Your Playlist
         </NavLink>
       </div>
     </nav>

@@ -6,7 +6,7 @@ export default function Error() {
   console.log(error);
   return (
     <div className="m-5">
-      <h1 className="text-xl">Yikes!</h1>
+      <h1 className="text-xl">Error</h1>
       <p className="text-xs mb-2">Something went wrong.</p>
       <p className="mb-3">
         <code>
@@ -14,7 +14,7 @@ export default function Error() {
         </code>
       </p>
       <Link href="/">🔙 take me home</Link>
-      <footer className="mt-4 text-xs">&copy; 2023 Music Store</footer>
+      <footer className="mt-4 text-xs"></footer>
     </div>
   );
 }
