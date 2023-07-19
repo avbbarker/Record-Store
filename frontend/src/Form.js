@@ -1,44 +1,58 @@
-import { useState } from "react";
-export default function Form({ handleSubmit }) {
-  const [name, setName] = useState("");
-  const [price, setPrice] = useState(0);
-  return (
-    <form
-      onSubmit={(event) => {
-        setName("");
-        setPrice(0);
-        handleSubmit(event);
-      }}
-      className="flex flex-col justify-between"
-    >
-      <input
-        name="name"
-        type="text"
-        placeholder="New Tea"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-        className="px-1.5 w-28 h-6 border-2 rounded-md text-sm"
-      />
-      <div className="flex gap-2 items-end">
-        <div>
-          <label>
-            <span className="text-xs">$</span>
-            <input
-              name="price"
-              type="number"
-              value={price}
-              min={0}
-              onChange={(event) => setPrice(event.target.value)}
-              className="px-1.5 w-12 h-4 border-2 border-t-0 border-x-0 text-xs"
-            />
-          </label>
-        </div>
-        <input
-          type="submit"
-          value="add tea"
-          className="text-sm text-gray-400 hover:italic hover:cursor-pointer"
-        />
-      </div>
-    </form>
-  );
+import React, {useState} from "react";
+
+function Form({albums, setAlbums}) {
+
+  const newFormObj = {
+    title:"",
+    image:"",
+    artist:"",
+    song: "",
+    genre: "",
+    link:""
+  }
+
+  const [newForm, setNewForm] = useState(newFormObj)
+  
+  function handleChange (e) {
+    setNewForm({
+    ...newForm,
+    [e.target.name]: e.target.value
+    })};
+
+function handleSubmit(e) {
+e.preventDefault()
+fetch("http://localhost:3000/albums", {
+method: "POST",
+headers: {
+  "Content-Type": "application/JSON"
+},
+body: JSON.stringify(newForm)
+})
+e.target.reset()
+
+setAlbums([...albums, newForm])
 }
+
+return (
+<form onSubmit={handleSubmit} className="playlist-form">
+
+  <h2>My Playlist</h2>
+
+  <input placeholder="Song Name" type="text" name="name" onChange={handleChange} />
+  <br /> 
+    
+  <input placeholder="Artist" type="text" name="aritist" onChange={handleChange} />
+  <br /> 
+  <input placeholder="New Image URL" type="text" name="image" onChange={handleChange}/>
+  <br /> 
+  <input placeholder="Genre" type="text" name="genre" onChange={handleChange} />
+  <br /> 
+  <input placeholder="YouTube Link" type="text" name="link" onChange={handleChange} />
+  <br /> 
+  <input type="submit" value="Create New Playlist" />
+</form>
+)} 
+
+
+
+export default Form;
