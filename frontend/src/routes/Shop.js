@@ -5,53 +5,31 @@ import Search from "../Search";
 
 export default function Shop() {
   const [albums, setAlbums] = useState(useLoaderData());
-<<<<<<< HEAD
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    fetch("http://localhost:3000/albums", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        id: albums.length + 1,
-        name: event.target.name.value,
-        price: parseInt(event.target.price.value),
-      }),
-    })
-      .then((response) => response.json())
-      .then((newAlbum) => setAlbums([...albums, newAlbum]));
-=======
   const [searchInput, setSearchInput] = useState("")
 
-  function changeSearch(e){
+  function changeSearch (e) {
     setSearchInput(e)
->>>>>>> 138816fefb41982f1de477185398e0f901ed210a
   }
 
   return (
+ <>
+    <Search searchInput={searchInput} changeSearch={changeSearch} />
     <div className="album-display">
       {albums.map((album) => (
         <div key={album.id}>
-<<<<<<< HEAD
-          <h2>{album.title}</h2>
+          <h2 >{album.title}</h2>
           <h3>{album.artist}</h3>
           <h5>{album.genre}</h5>
           <h6>{album.release_year}</h6>
-=======
-          <p>{album.name}</p>
-          <sub>{album.price}</sub>
->>>>>>> 138816fefb41982f1de477185398e0f901ed210a
+          <img src={album.image} alt={album.title}/>
+          <br></br>
+          <a href={album.link}> Link</a>
+
+
         </div>
       ))}
-      {/* <Form albums={albums} setAlbums={setAlbums} /> */}
-      <Search searchInput={searchInput} changeSearch={changeSearch} />
-
-      <div>
-        
-      </div>
+      {<Form albums={albums} setAlbums={setAlbums} /> }
     </div>
+ </>
   );
 }
