@@ -36,12 +36,12 @@ setAlbums([...albums, newForm])
 return (
 <form onSubmit={handleSubmit} className="playlist-form">
 
-  <h2>My Playlist</h2>
+  <h2>Sell these Albums</h2>
 
-  <input placeholder="Song Name" type="text" name="name" onChange={handleChange} />
+  <input placeholder="Song Name" type="text" name="title" onChange={handleChange} />
   <br /> 
     
-  <input placeholder="Artist" type="text" name="aritist" onChange={handleChange} />
+  <input placeholder="Artist" type="text" name="artist" onChange={handleChange} />
   <br /> 
   <input placeholder="New Image URL" type="text" name="image" onChange={handleChange}/>
   <br /> 
@@ -49,7 +49,7 @@ return (
   <br /> 
   <input placeholder="YouTube Link" type="text" name="link" onChange={handleChange} />
   <br /> 
-  <input type="submit" value="Create New Playlist" />
+  <input type="submit" value="Sell these Albums" />
 </form>
 )} 
 
