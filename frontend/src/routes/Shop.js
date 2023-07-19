@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Form from "../Form";
-import Search from "../Search";
+// import Search from "../Search";
 
 export default function Shop() {
   const [albums, setAlbums] = useState(useLoaderData());
