@@ -1,16 +1,21 @@
 import React from "react";
 
-function Search ({changeSearch, searchInput}) {
+function Search({ changeSearch, searchInput }) {
+  function handleChange(e) {
+    changeSearch(e.target.value);
+  }
 
-    function handleChange(e){
-        changeSearch(e.target.value)
-    }
-
-return(
+  return (
     <div className="search-container">
-        <input type="text" placeholder="Search songs..." onChange={handleChange} value={searchInput} />
+      <input
+        className="search-bar"
+        type="text"
+        placeholder="Search songs..."
+        onChange={handleChange}
+        value={searchInput}
+      />
     </div>
-);
+  );
 }
 
 export default Search;

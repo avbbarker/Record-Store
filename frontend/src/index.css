@@ -14,9 +14,141 @@ code {
 
 .playlist-form {
   text-align: float;
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
 }
-
-.playlist-form input, .playlist-form label {
+.site-header-container {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+  display: flex;
+}
+.site-header {
+  display: inline-block;
+}
+.playlist-form {
+  justify-content: center;
+}
+.playlist-form input,
+.playlist-form label {
   display: block;
   margin-top: 0.5em;
+}
+.welcome-page {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+  display: flex;
+}
+.record-gif {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+  width: 75%;
+  justify-self: auto;
+}
+.nav-bar {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+}
+
+.nav-bar-items {
+  display: inline-flex;
+  width: 96%;
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.nav-item {
+  display: inline-flex;
+  margin-inline: 20px;
+}
+.nav-item-pages {
+  justify-content: center;
+  display: inline-flex;
+  margin-inline: 20px;
+}
+.nav-item-about {
+  display: flex;
+  justify-content: right;
+}
+.search-container {
+  padding: 0.5em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.search-bar {
+  width: 100%;
+  align-self: center;
+}
+
+.album-display {
+  display: flex;
+  overflow: scroll;
+  padding: 0.5em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.album-info {
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+  width: 270px;
+}
+.album {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+  /* margin: 15px;
+  padding: 0; */
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+.album-image-container {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+}
+.album-image {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  height: 250px;
+}
+.album-link {
+  margin: 0;
+  padding: 0;
+}
+.selected-album {
+  height: auto;
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+  display: flex;
+}
+
+.selected-album-image {
+  width: 400px;
+  height: 400px;
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.selected-album-info {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
+}
+.footer {
+  display: block;
+}
+.about-container {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid black;
 }
