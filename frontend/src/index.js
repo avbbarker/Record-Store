@@ -7,8 +7,8 @@ import Error from "./Error";
 import Root from "./routes/Root";
 import Welcome from "./Welcome";
 import Shop from "./routes/Shop";
-import Playlist from "./routes/Playlist";
-
+import Cart from "./routes/Cart";
+import About from "./About";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <Welcome />,
       },
       {
-        path: "albums",
+        path: "shop",
         element: <Shop />,
         loader: async () =>
           fetch("http://localhost:3000/albums").then((response) =>
@@ -28,14 +28,16 @@ const router = createBrowserRouter([
           ),
       },
       {
-        path: "Playlist",
-        element: <Playlist />,
+        path: "cart",
+        element: <Cart />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },
 ]);
-
-// hi
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

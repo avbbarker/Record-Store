@@ -5,108 +5,109 @@
       "title": "Toxicity",
       "artist": "System Of A Down",
       "release_year": 2001,
-      "songs": "",
-      "image": "./assets/Toxicity.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.26ajcRlSvz6rGXPb2PwEkwHaHa%26pid%3DApi&f=1&ipt=ebd62f3da0fd5d75495f490d7e6810bf09343d43b869708843724ea33c6dbf3e&ipo=images",
       "genre": "Rock",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_kb1yvg1bLW2yKdKxO1qvzGK7pFl9TuFBw"
     },
     {
       "id": 2,
       "title": "Nevermind",
       "artist": "Nirvana",
       "release_year": 1991,
-      "songs": "",
-      "image": "./assets/Nevermind.jpeg",
+      "price": "",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61quAjwYMtS._SX522_.jpg",
       "genre": "Rock",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_nN3UV5AlNbRP9di-cmgC-ACgL8JLK6jGk"
     },
     {
       "id": 3,
       "title": "Vespertine",
       "artist": "Björk",
       "release_year": 2001,
-      "songs": "",
-      "image": "./assets/Vespertine.jpeg",
+      "price": "",
+      "image": "https://images.genius.com/b15640bb327be7a233301bdea8f2939a.1000x1000x1.png",
       "genre": "Pop",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_kBD_845bpnem9ZuvKPq8Ptoa47opzC1r4"
     },
     {
       "id": 4,
       "title": "Blonde",
       "artist": "Frank Ocean",
       "release_year": 2016,
-      "songs": "",
-      "image": "./assets/Blonde.jpeg",
+      "price": "",
+      "image": "http://s3.amazonaws.com/hiphopdx-production/2016/08/Frank-Ocean-blonde-album-cover-628x628.jpg",
       "genre": "Pop",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_kClWWfWghQXro7ONQ-DfH3RZ1oxiu0kMA"
     },
     {
       "id": 5,
       "title": "To Pimp A Butterfly",
       "artist": "Kendrick Lamar",
       "release_year": 2015,
-      "songs": "",
-      "image": "./assets/ToPimpAButterfly.jpeg",
+      "price": "",
+      "image": "https://miro.medium.com/max/1400/1*9NKwUDdbL41r6PqWEvXz3Q.jpeg",
       "genre": "Hip-Hop",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=PLDCdjwiC90TGNwIVOUU_mKmThxmYPcKZr"
     },
     {
       "id": 6,
       "title": "Led Zeppelin IV",
       "artist": "Led Zeppelin",
       "release_year": 1971,
-      "songs": "",
-      "image": "./assets/LedZeppelinIV.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsuperhypeblog.com%2Fwp-content%2Fuploads%2F2011%2F08%2Fled-zep-iv.jpg&f=1&nofb=1&ipt=e43df79505424e8a5bb514c820ebcf5f64460f1aafbb3c8d23c02ee4dca336b4&ipo=images",
       "genre": "Rock",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=PLnif9Rfb5Adk-e0rvMJgJIKqkANw3VfPm"
     },
     {
       "id": 7,
       "title": "Rodeo",
       "artist": "Travis Scott",
       "release_year": 2015,
-      "songs": "",
-      "image": "./assets/Rodeo.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fs3.amazonaws.com%2Fhiphopdx-production%2F2015%2F09%2Ftravis-scott-rodeo-album-deluxe.jpg&f=1&nofb=1&ipt=76935dc7da5c71b074dc8bea9f46e51a790ce64c466e2d7f121275ec8efe853c&ipo=images",
       "genre": "Hip-Hop",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_mpTXT8bcs7ddIHu4TU6Yyf-wd4sL4AJ0M"
     },
     {
       "id": 8,
       "title": "Electric Ladyland",
       "artist": "The Jimi Hendrix Experience",
       "release_year": 1968,
-      "songs": "",
-      "image": "./assets/ElectricLadyland.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F55%2F2e%2F19%2F552e19b4a818cb60698bcc9303c29786.jpg&f=1&nofb=1&ipt=797987ac13d86cde86980543285e6825b0f1b4f51f9553c70bea64c68c49d0bc&ipo=images",
       "genre": "Rock",
-      "link": 0
+      "link": "https://www.youtube.com/watch?v=Hz_XAldktzY&list=PL1RRNXldMeREitKT6vfk54RMpzn6ofKHW"
     },
     {
       "id": 9,
       "title": "Dummy",
       "artist": "Portishead",
       "release_year": 1994,
-      "songs": "",
-      "image": "./assets/Dummy.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.genius.com%2F0df63331bf17f7c94c736abc674c58c3.1000x1000x1.png&f=1&nofb=1&ipt=198583cb611beb5a57bec9e0e327f86c6ebdcd6eb772893e87f6b7209d040485&ipo=images",
       "genre": "Rock",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_nMft1HP8iD7Wu0f0PfOKfao7r_nrBz6O8"
     },
     {
       "id": 10,
       "title": "Shoot For The Stars Aim For The Moon",
       "artist": "Pop Smoke",
       "release_year": 2020,
-      "songs": "",
-      "image": "./assets/ShootForTheStars.jpeg",
+      "price": "",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthefeaturepresentation.com%2Fwp-content%2Fuploads%2F2020%2F07%2Fpop-smoke-moon-stars-album-review-2020-header.jpg&f=1&nofb=1&ipt=dae79cb1e03957d35bc891c661974904b2cb9972e30b24ce829653ff2c9d0d83&ipo=images",
       "genre": "Hip-Hop",
-      "link": 0
+      "link": "https://www.youtube.com/playlist?list=PLxA687tYuMWhSIVBp3Cda-YvNB96sVf3_"
     },
     {
-      "title": "As It Was",
+      "title": "Harry's House",
       "image": "data:image/jpeg;base64,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",
       "artist": "Harry Styles",
-      "song": "",
+      "release_year": 2022,
+      "price": "",
       "genre": "Pop",
-      "link": "https://www.youtube.com/watch?v=H5v3kku4y6Q",
+      "link": "https://www.youtube.com/playlist?list=OLAK5uy_mlz0XdHjgFO8gVxdQD94aCHsEfpUlgJJ0",
       "id": 11
     }
   ]

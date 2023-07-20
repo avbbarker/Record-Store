@@ -1,35 +1,34 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Form from "../Form";
-// import Search from "../Search";
+import Search from "../Search";
+import AlbumList from "../AlbumList";
+import ClickedAlbum from "../ClickedAlbum";
 
 export default function Shop() {
   const [albums, setAlbums] = useState(useLoaderData());
-  const [searchInput, setSearchInput] = useState("")
+  const [searchInput, setSearchInput] = useState("");
+  const [clickedAlbumFromList, setClickedAlbumFromList] = useState(albums[0]);
 
-  function changeSearch (e) {
-    setSearchInput(e)
+  function handleClickedAlbum(album) {
+    setClickedAlbumFromList(album);
   }
 
+  function changeSearch(e) {
+    setSearchInput(e);
+  }
+  console.log(AlbumList);
+
   return (
- <>
-    <Search searchInput={searchInput} changeSearch={changeSearch} />
-    <div className="album-display">
-      {albums.map((album) => (
-        <div key={album.id}>
-          <h2 >{album.title}</h2>
-          <h3>{album.artist}</h3>
-          <h5>{album.genre}</h5>
-          <h6>{album.release_year}</h6>
-          <img src={album.image} alt={album.title}/>
-          <br></br>
-          <a href={album.link}> Link</a>
-
-
-        </div>
-      ))}
-      {<Form albums={albums} setAlbums={setAlbums} /> }
-    </div>
- </>
+    <>
+      <Search searchInput={searchInput} changeSearch={changeSearch} />
+      <AlbumList
+        searchInput={searchInput}
+        albums={albums}
+        handleClickedAlbum={handleClickedAlbum}
+      />
+      <ClickedAlbum clickedAlbumFromList={clickedAlbumFromList} />
+      <Form albums={albums} setAlbums={setAlbums} />
+    </>
   );
 }
