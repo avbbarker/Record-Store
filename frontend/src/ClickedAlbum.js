@@ -1,6 +1,6 @@
 import React from "react";
 
-function ClickedAlbum({ clickedAlbumFromList }) {
+function ClickedAlbum({ clickedAlbumFromList, handleAddToCart }) {
   return (
     <div className="selected-album">
       <img
@@ -21,7 +21,12 @@ function ClickedAlbum({ clickedAlbumFromList }) {
         </a>
         <br />
         <br />
-        <button className="add-to-cart">Add to cart</button>
+        <button
+          className="add-to-cart"
+          onClick={() => handleAddToCart(clickedAlbumFromList)}
+        >
+          Add to cart
+        </button>
       </div>
     </div>
   );

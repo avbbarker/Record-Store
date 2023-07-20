@@ -7,8 +7,8 @@ import Error from "./Error";
 import Root from "./routes/Root";
 import Welcome from "./Welcome";
 import Shop from "./routes/Shop";
-import Cart from "./routes/Cart";
-import About from "./About";
+// import Cart from "./Cart";
+import About from "./routes/About";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,10 +26,6 @@ const router = createBrowserRouter([
           fetch("http://localhost:3000/albums").then((response) =>
             response.json()
           ),
-      },
-      {
-        path: "cart",
-        element: <Cart />,
       },
       {
         path: "about",

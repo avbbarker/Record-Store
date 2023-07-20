@@ -14,10 +14,6 @@ export default function Nav() {
               <NavLink className="nav-item" to="shop">
                 Shop
               </NavLink>
-
-              <NavLink className="nav-item" to="cart">
-                Cart
-              </NavLink>
             </div>
             <div className="nav-item-about">
               <NavLink className="nav-about" to="about">
