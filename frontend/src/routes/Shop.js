@@ -17,15 +17,8 @@ export default function Shop() {
     <div className="album-display">
       {albums.map((album) => (
         <div key={album.id}>
-          <h2 >{album.title}</h2>
-          <h3>{album.artist}</h3>
-          <h5>{album.genre}</h5>
-          <h6>{album.release_year}</h6>
-          <img src={album.image} alt={album.title}/>
-          <br></br>
-          <a href={album.link}> Link</a>
-
-
+          <p>{album.name}</p>
+          <sub>{album.price}</sub>
         </div>
       ))}
       {<Form albums={albums} setAlbums={setAlbums} /> }
