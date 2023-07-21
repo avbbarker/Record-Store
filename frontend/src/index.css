@@ -3,32 +3,90 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  font-family: "UnifrakturCook", cursive;
+  margin: 0;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: aliceblue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.playlist-form {
-  text-align: float;
-  padding: 0.01em;
-  margin: 1em;
-  border: 2px solid black;
+.welcome-page {
+  height: 1000px;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4a%2F08%2F4d%2F4a084d639e013d7d8fc5a9bed4d60dfb.gif&f=1&nofb=1&ipt=2bc5c093fb311a079d10e26c2fc6f2091d153d17be3bc9adfd8aa21da7c40b96&ipo=images");
 }
-.site-header-container {
-  padding: 0.01em;
-  margin: 1em;
-  border: 2px solid black;
-  display: flex;
+.welcome-page-container {
+  height: 750px;
 }
 .site-header {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 7em;
   display: inline-block;
+  width: 500px;
+  margin-top: 0px;
+}
+.one-stop {
+  font-size: 50pt;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: right;
+}
+.logo-container {
+  margin-right: 0px;
+  float: left;
 }
 .playlist-form {
+  text-align: center;
+  margin: 1em;
+  border: 2px solid black;
+  width: 450px;
+}
+.form-container {
   justify-content: center;
+  display: flex;
+  height: 500px;
+}
+.form-heading {
+  font-size: 24pt;
+}
+.input-container {
+  justify-content: center;
+  width: 150px;
+}
+.input-field {
+  width: 450px;
+  font-family: "UnifrakturCook", cursive;
+  font-size: 14pt;
+}
+.submit-field {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 14pt;
+  justify-content: center;
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 150px;
+}
+.site-header-container {
+  border: 2px solid black;
+  display: flex;
+  height: 125px;
+  margin-left: 35px;
+  margin-right: 0px;
+  margin-top: 35px;
+  float: left;
+  width: 100%;
+}
+.playlist-form {
+  justify-content: end;
 }
 .playlist-form input,
 .playlist-form label {
@@ -40,6 +98,9 @@ code {
   margin: 1em;
   border: 2px solid black;
   display: flex;
+}
+.welcome-page-header {
+  font-size: 72pt;
 }
 .record-gif {
   padding: 0.01em;
@@ -60,62 +121,88 @@ code {
   padding: 0.01em;
   margin: 1em;
   border: 2px solid black;
+  justify-content: center;
 }
 .nav-item {
   display: inline-flex;
   margin-inline: 20px;
+  font-size: 25pt;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.nav-item:link {
+  color: red;
+  text-decoration: none;
+}
+
+.nav-item:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: rgb(242, 210, 3);
+  text-decoration: none;
+}
+
+.nav-item:active {
+  color: blue;
+  text-decoration: none;
 }
 .nav-item-pages {
   justify-content: center;
   display: inline-flex;
   margin-inline: 20px;
 }
-.nav-item-about {
-  display: flex;
-  justify-content: right;
-}
 .search-container {
+  display: flex;
+  justify-content: center;
   padding: 0.5em;
   margin: 1em;
   border: 2px solid black;
 }
 .search-bar {
-  width: 100%;
-  align-self: center;
+  font-family: "UnifrakturCook", cursive;
+  font-size: 14pt;
+  width: 750px;
+  height: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
 }
 
 .album-display {
   display: flex;
   overflow: scroll;
   padding: 0.5em;
-  margin: 1em;
+  margin-left: 35px;
+  margin-right: 35px;
   border: 2px solid black;
 }
 .album-info {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 5px;
   align-self: flex-start;
   width: 270px;
 }
 .album {
   padding: 0.01em;
-  margin: 1em;
+  margin: 10px;
   border: 2px solid black;
-  /* margin: 15px;
-  padding: 0; */
   position: relative;
-  height: 500px;
+  height: 300px;
   width: 300px;
+  background-color: rgba(255, 255, 255, 0.086);
 }
 .album-image-container {
-  margin: 0;
+  margin: auto;
   padding: 0;
   position: absolute;
   bottom: 0px;
 }
 .album-image {
-  display: flex;
-  margin: 0;
+  display: block;
+  margin-left: 25px;
   padding: 0;
   width: 250px;
   height: 250px;
@@ -126,10 +213,33 @@ code {
 }
 .selected-album {
   height: auto;
-  padding: 0.01em;
-  margin: 1em;
+  width: 45%;
+  float: left;
+  padding: 5px;
+  margin-left: 35px;
   border: 2px solid black;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.086);
+}
+
+.selected-album-link:link {
+  color: red;
+  text-decoration: none;
+}
+
+.selected-album-link:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.selected-album-link:hover {
+  color: rgb(242, 210, 3);
+  text-decoration: none;
+}
+
+.selected-album-link:active {
+  color: blue;
+  text-decoration: none;
 }
 
 .selected-album-image {
@@ -141,8 +251,14 @@ code {
 }
 .selected-album-info {
   padding: 0.01em;
+  width: 400px;
   margin: 1em;
-  border: 2px solid black;
+  float: inline-end;
+  text-align: right;
+}
+.add-to-cart {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 14pt;
 }
 .footer {
   display: block;
@@ -151,4 +267,96 @@ code {
   padding: 0.01em;
   margin: 1em;
   border: 2px solid black;
+}
+.about-page {
+  font-size: 72pt;
+}
+.about-blurb {
+  font-size: 40pt;
+}
+.cart-label {
+  padding: 1px;
+  margin-left: 20px;
+  margin-top: 0px;
+  position: absolute;
+  font-size: 40pt;
+}
+.cart-container {
+  overflow-y: scroll;
+  height: 372.5px;
+  margin-right: 35px;
+  margin-top: 75px;
+}
+.cart {
+  float: right;
+  width: 45%;
+  margin-right: 35px;
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.086);
+}
+.cart-item-container {
+  padding: 0.01em;
+  margin: 1em;
+  border: 2px solid rgba(0, 0, 0, 0.261);
+  display: flex;
+  width: 643px;
+}
+
+.cart-image {
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(0, 0, 0, 0.884);
+}
+.cart-info {
+  display: block;
+  justify-content: center;
+  float: left;
+  width: 500px;
+}
+.cart-title {
+  font-size: 14pt;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 30px;
+}
+.cart-artist {
+  font-size: 12pt;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 30px;
+}
+.cart-genre {
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 30px;
+}
+.cart-price {
+  font-size: 10pt;
+  padding-left: 10px;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 30px;
+}
+.form-toggle {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 7em;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+.form-button {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 14pt;
+}
+.page-spacer-bottom {
+  height: 100px;
 }

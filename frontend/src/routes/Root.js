@@ -5,10 +5,13 @@ import Header from "../Header";
 
 export default function Root() {
   return (
-    <div className="sa">
+    <div className="site">
       <Header />
       <Nav />
       <Outlet />
+      <div className="page-spacer-bottom">
+        <br />
+      </div>
       <Footer />
     </div>
   );

@@ -5,13 +5,18 @@ function Form({ albums, setAlbums }) {
     title: "",
     image: "",
     artist: "",
-    release_year: "",
-    price: "",
+    release_year: 0,
+    price: 0,
     genre: "",
     link: "",
   };
 
   const [newForm, setNewForm] = useState(newFormObj);
+  const [formToggle, setFormToggle] = useState(true);
+
+  function showForm() {
+    setFormToggle(!formToggle);
+  }
 
   function handleChange(e) {
     setNewForm({
@@ -35,57 +40,73 @@ function Form({ albums, setAlbums }) {
   }
 
   return (
-    <>
+    <div className="form-container">
       <form onSubmit={handleSubmit} className="playlist-form">
-        <h2>Sell an Album</h2>
+        <h2 className="form-heading" onClick={showForm}>
+          Sell an Album
+        </h2>
+        <div className="input-container">
+          <input
+            className="input-field"
+            placeholder="Album Name"
+            type="text"
+            name="title"
+            onChange={handleChange}
+          />
+          <br />
 
-        <input
-          placeholder="Album Name"
-          type="text"
-          name="title"
-          onChange={handleChange}
-        />
+          <input
+            className="input-field"
+            placeholder="Artist"
+            type="text"
+            name="artist"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            className="input-field"
+            placeholder="Year Released"
+            type="text"
+            name="release_year"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            className="input-field"
+            placeholder="Genre"
+            type="text"
+            name="genre"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            className="input-field"
+            placeholder="Price"
+            type="value"
+            name="price"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            className="input-field"
+            placeholder="Image URL"
+            type="text"
+            name="image"
+            onChange={handleChange}
+          />
+          <br />
+          <input
+            className="input-field"
+            placeholder="YouTube Link"
+            type="text"
+            name="link"
+            onChange={handleChange}
+          />
+        </div>
         <br />
-
-        <input
-          placeholder="Artist"
-          type="text"
-          name="artist"
-          onChange={handleChange}
-        />
-        <br />
-        <input
-          placeholder="Year Released"
-          type="text"
-          name="release_year"
-          onChange={handleChange}
-        />
-        <br />
-        <input
-          placeholder="Image URL"
-          type="text"
-          name="image"
-          onChange={handleChange}
-        />
-        <br />
-        <input
-          placeholder="Genre"
-          type="text"
-          name="genre"
-          onChange={handleChange}
-        />
-        <br />
-        <input
-          placeholder="YouTube Link"
-          type="text"
-          name="link"
-          onChange={handleChange}
-        />
-        <br />
-        <input type="submit" value="Sell this Album" />
+        <input className="submit-field" type="submit" value="Sell this Album" />
       </form>
-      <br />
-    </>
+    </div>
   );
 }
 

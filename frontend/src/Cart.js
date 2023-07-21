@@ -2,17 +2,23 @@ import React from "react";
 
 export default function Cart({ cartList }) {
   return (
-    <div>
-      {cartList.map((album) => {
-        return (
-          <div key={album.id}>
-            <img src={album.image} />
-            <div>{album.title}</div>
-            <div>{album.artist}</div>
-            <div>{album.genre}</div>
-          </div>
-        );
-      })}
+    <div className="cart">
+      <h1 className="cart-label">Cart</h1>
+      <div className="cart-container">
+        {cartList.map((album) => {
+          return (
+            <div className="cart-item-container" key={album.id}>
+              <img className="cart-image" src={album.image} />
+              <div className="cart-info">
+                <p className="cart-title">{album.title}</p>
+                <p className="cart-artist">{album.artist}</p>
+                <p className="cart-genre">{album.genre}</p>
+                <sub className="cart-price">${album.price}.00</sub>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
