@@ -14,9 +14,7 @@ export default function Nav() {
               <NavLink className="nav-item" to="shop">
                 Shop
               </NavLink>
-            </div>
-            <div className="nav-item-about">
-              <NavLink className="nav-about" to="about">
+              <NavLink className="nav-item" to="about">
                 About
               </NavLink>
             </div>

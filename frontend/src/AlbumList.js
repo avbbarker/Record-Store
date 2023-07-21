@@ -14,10 +14,10 @@ function AlbumList({ albums, searchInput, handleClickedAlbum }) {
       {filteredSearch.map((album) => (
         <div className="album" key={album.id}>
           <div className="album-info">
-            <h2 className="album-title">{album.title}</h2>
+            {/* <h2 className="album-title">{album.title}</h2>
             <h3 className="album-artist">{album.artist}</h3>
             <h5 className="album-genre">{album.genre}</h5>
-            <h6 className="album-year">{album.release_year}</h6>
+            <h6 className="album-year">{album.release_year}</h6> */}
           </div>
           <div className="album-image-container">
             <img

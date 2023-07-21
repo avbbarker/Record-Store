@@ -11,6 +11,7 @@ export default function Shop() {
   const [searchInput, setSearchInput] = useState("");
   const [clickedAlbumFromList, setClickedAlbumFromList] = useState(albums[0]);
   const [cartList, setCartList] = useState([]);
+  const [albumFormOpen, setAlbumFormOpen] = useState(true);
 
   function handleClickedAlbum(album) {
     setClickedAlbumFromList(album);
@@ -23,6 +24,11 @@ export default function Shop() {
   function handleAddToCart(albumToAdd) {
     setCartList([...cartList, albumToAdd]);
   }
+
+  function handleClickForm() {
+    setAlbumFormOpen(!albumFormOpen);
+  }
+
   return (
     <>
       <Search searchInput={searchInput} changeSearch={changeSearch} />
@@ -35,8 +41,13 @@ export default function Shop() {
         clickedAlbumFromList={clickedAlbumFromList}
         handleAddToCart={handleAddToCart}
       />
-      <Form albums={albums} setAlbums={setAlbums} />
       <Cart cartList={cartList} setCartList={setCartList} />
+      <div className="form-toggle">
+        <button className="form-button" onClick={() => handleClickForm()}>
+          {albumFormOpen ? "Close" : "Open"} Sell Form
+        </button>
+      </div>
+      {albumFormOpen ? null : <Form albums={albums} setAlbums={setAlbums} />}
     </>
   );
 }
