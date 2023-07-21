@@ -44,7 +44,7 @@ export default function Shop() {
       <Cart cartList={cartList} setCartList={setCartList} />
       <div className="form-toggle">
         <button className="form-button" onClick={() => handleClickForm()}>
-          {albumFormOpen ? "Close" : "Open"} Sell Form
+          {albumFormOpen ? "Open" : "Close"} Sell Form
         </button>
       </div>
       {albumFormOpen ? null : <Form albums={albums} setAlbums={setAlbums} />}
