@@ -1,7 +1,7 @@
 import React from "react";
 
-function AlbumList({ albums, searchInput, handleClickedAlbum }) {
-  const filteredSearch = albums.filter((album) => {
+function AlbumList({ albums, searchInput, handleClickedAlbum }) { // props passed down from shop.js
+  const filteredSearch = albums.filter((album) => {  //the search filter method that will search for specific title, artist or genre
     return (
       album.title.toLowerCase().includes(searchInput.toLowerCase()) ||
       album.artist.toLowerCase().includes(searchInput.toLowerCase()) ||
@@ -11,8 +11,8 @@ function AlbumList({ albums, searchInput, handleClickedAlbum }) {
 
   return (
     <div className="album-display">
-      {filteredSearch.map((album) => (
-        <div className="album" key={album.id}>
+      {filteredSearch.map((album) => ( //display is used here instead of albumlist becuase it is also representing the entire album
+        <div className="album" key={album.id}> 
           <div className="album-info">
             {/* <h2 className="album-title">{album.title}</h2>
             <h3 className="album-artist">{album.artist}</h3>

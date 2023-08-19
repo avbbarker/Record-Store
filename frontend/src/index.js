@@ -23,9 +23,8 @@ const router = createBrowserRouter([
         path: "shop",
         element: <Shop />,
         loader: async () =>
-          fetch("http://localhost:3000/albums").then((response) =>
-            response.json()
-          ),
+          fetch("http://localhost:3000/albums")
+          .then((response) => response.json()),
       },
       {
         path: "about",
