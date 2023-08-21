@@ -14,17 +14,13 @@ function AlbumList({ albums, searchInput, handleClickedAlbum }) { // props passe
       {filteredSearch.map((album) => ( //display is used here instead of albumlist becuase it is also representing the entire album
         <div className="album" key={album.id}> 
           <div className="album-info">
-            {/* <h2 className="album-title">{album.title}</h2>
-            <h3 className="album-artist">{album.artist}</h3>
-            <h5 className="album-genre">{album.genre}</h5>
-            <h6 className="album-year">{album.release_year}</h6> */}
           </div>
           <div className="album-image-container">
             <img
               className="album-image"
               src={album.image}
-              alt={album.title}
-              onClick={() => handleClickedAlbum(album)}
+              // alt={album.title}
+              onClick={() => handleClickedAlbum(album)} //when the image is clicked, it will pass that album information to the handleClickAlbum function in the shop.js
             />
             <br />
           </div>
