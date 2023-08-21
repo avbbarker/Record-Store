@@ -1,1 +1,3 @@
-# Record Store!
+# 💿 Record Store! 🏪
+
+This is a great repo! 
